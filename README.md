@@ -77,9 +77,34 @@ The CPU functionality has been verified using ModelSim. Test cases for different
 
 ---
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/CPU-Design.git
-   cd CPU-Design
+---
+
+## Simulation
+To verify the functionality of the CPU, follow these steps:
+
+1. **Open a Verilog Simulation Tool:**
+   Use ModelSim or any other compatible Verilog simulation tool.
+
+2. **Compile Verilog Files:**
+   Compile all the Verilog files provided in the repository.
+
+3. **Load the Testbench:**
+   Load the `design.sv` testbench into the simulator.
+
+4. **Run the Simulation:**
+   Simulate the design and inspect the waveform or log output to validate the CPU's behavior.
+
+---
+
+## Future Enhancements
+Here are some ideas for extending the capabilities of the CPU:
+
+1. **Pipeline Implementation:**
+   Introduce pipelining to increase the CPU's throughput by overlapping instruction execution.
+
+2. **Interrupt Handling:**
+   Add support for interrupts to handle asynchronous events.
+
+3. **Floating-Point Operations:**
+   Extend the ALU to perform floating-point arithmetic for more complex computations.
 
