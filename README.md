@@ -40,19 +40,19 @@ The CPU handles all conditional mnemonics specified in the ARM LRM, including bu
 <img src="Images/Datapath.png" alt="Datapath Diagram" width="800">
 
 #### Branch Instruction
-![Datapath for Branch Instruction](Datapath_Branch.png)
+![Datapath for Branch Instruction](Images/Datapath_Branch.png)
 
 #### Data Processing with Immediate Values
-![Datapath for Data Processing (Immediate)](Datapath_Dataprocessing_Imm.png)
+![Datapath for Data Processing (Immediate)](Images/Datapath_Dataprocessing_Imm.png)
 
 #### Data Processing
-![Datapath for Data Processing](Datapath_Dataprocessing.png)
+![Datapath for Data Processing](Images/Datapath_Dataprocessing.png)
 
 #### Load Instruction (LDR)
-![Datapath for LDR Instruction](Datapath_Memory_LDR.png)
+![Datapath for LDR Instruction](Images/Datapath_Memory_LDR.png)
 
 #### Store Instruction (STR)
-![Datapath for STR Instruction](Datapath_Memory_STR.png)
+![Datapath for STR Instruction](Images/Datapath_Memory_STR.png)
 
 The CPU consists of a carefully designed datapath to handle the instruction execution process. Key components include:
 - **Instruction Memory**: Stores instructions for execution.
