@@ -37,6 +37,7 @@ The CPU handles all conditional mnemonics specified in the ARM LRM, including bu
 ## Architecture
 
 ### Datapath
+![Datapath Diagram](Images/Datapath.png)
 The CPU consists of a carefully designed datapath to handle the instruction execution process. Key components include:
 - **Instruction Memory**: Stores instructions for execution.
 - **Data Memory**: Stores data values used by the CPU.
