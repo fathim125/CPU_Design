@@ -1,6 +1,5 @@
 # CPU_Design
 
-
 ## Overview
 This project implements a Reduced Instruction Set Computer (RISC)-based CPU using Verilog HDL. The CPU is designed to execute a basic set of instructions categorized into Data Processing, Memory Operations, and Branching. It supports conditional execution as defined by the ARM Architecture Reference Manual (ARM LRM).
 
@@ -35,13 +34,25 @@ The CPU handles all conditional mnemonics specified in the ARM LRM, including bu
 ---
 
 ## Architecture
-
   <img src="Images/Overview.png" alt="Overview" width="600">
-
-
+  
 ### Datapath
-
 <img src="Images/Datapath.png" alt="Datapath Diagram" width="800">
+
+#### Branch Instruction
+![Datapath for Branch Instruction](Datapath_Branch.png)
+
+#### Data Processing with Immediate Values
+![Datapath for Data Processing (Immediate)](Datapath_Dataprocessing_Imm.png)
+
+#### Data Processing
+![Datapath for Data Processing](Datapath_Dataprocessing.png)
+
+#### Load Instruction (LDR)
+![Datapath for LDR Instruction](Datapath_Memory_LDR.png)
+
+#### Store Instruction (STR)
+![Datapath for STR Instruction](Datapath_Memory_STR.png)
 
 The CPU consists of a carefully designed datapath to handle the instruction execution process. Key components include:
 - **Instruction Memory**: Stores instructions for execution.
@@ -60,11 +71,8 @@ The instruction encoding follows the ARM LRM specification:
 
 - **Branch Instructions**: Conditional and unconditional branching.
   <img src="Images/Instruction_Branch.png" alt="Branch Instructions" width="600">
+  
   <img src="Images/Instruction_Branch_2.png" alt="Branch Instructions" width="600">
-
-
-### Status Registers
-The CPU updates the N (negative), Z (zero), C (carry), and V (overflow) flags in the Current Program Status Register (CPSR) based on the instruction outcome, enabling conditional execution.
 
 ---
 
