@@ -39,6 +39,8 @@ The CPU handles all conditional mnemonics specified in the ARM LRM, including bu
 ### Datapath
 <img src="Images/Datapath.png" alt="Datapath Diagram" width="800">
 
+Below is an image of the detailed datapath for each instruction. The red wires highlight the paths and control signals used for each specific instruction:
+
 #### Branch Instruction
   <img src="Images/Datapath_Branch.png" alt="Datapath for Branch Instruction" width="600">
 
