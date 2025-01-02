@@ -72,7 +72,7 @@ The instruction encoding follows the ARM LRM specification:
 - **Branch Instructions**: Conditional and unconditional branching.
   <img src="Images/Instruction_Branch.png" alt="Branch Instructions" width="600">
   
-  <img src="Images/Instruction_Branch_2.png" alt="Branch Instructions" width="200">
+  <img src="Images/Instruction_Branch_2.png" alt="Branch Instructions" width="180">
 
 ---
 
@@ -82,19 +82,11 @@ The control logic for the CPU has been detailed to show how signals are routed t
 
 
 #### Control Signals to Datapath
-  <img src="Images/Controller_2.png" alt="Controller Datapath" width="500">
+  <img src="Images/Controller_2.png" alt="Controller Datapath" width="700">
 
 
 #### ALU Control Logic
   <img src="Images/Controller_3.png" alt="Controller ALU" width="500">
-
-
-## Simulation
-The CPU functionality has been verified using ModelSim. Test cases for different instruction types ensure correctness, including:
-- Data processing instructions (e.g., ADD, SUB).
-- Memory operations (e.g., LDR, STR).
-- Branching instructions (e.g., B).
-- Conditional mnemonics (e.g., EQ, NE, GT).
 
 ---
 
