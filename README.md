@@ -72,7 +72,7 @@ The instruction encoding follows the ARM LRM specification:
 - **Branch Instructions**: Conditional and unconditional branching.
   <img src="Images/Instruction_Branch.png" alt="Branch Instructions" width="600">
   
-  <img src="Images/Instruction_Branch_2.png" alt="Branch Instructions" width="50">
+  <img src="Images/Instruction_Branch_2.png" alt="Branch Instructions" width="200">
 
 ---
 
