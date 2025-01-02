@@ -38,9 +38,7 @@ The CPU handles all conditional mnemonics specified in the ARM LRM, including bu
 
 ### Datapath
 
-<svg width="800" height="auto">
-  <image href="Images/Datapath.png" transform="rotate(90)" x="0" y="0" width="800" />
-</svg>
+<img src="Images/Datapath.png" alt="Datapath Diagram" width="500">
 
 The CPU consists of a carefully designed datapath to handle the instruction execution process. Key components include:
 - **Instruction Memory**: Stores instructions for execution.
@@ -52,8 +50,14 @@ The CPU consists of a carefully designed datapath to handle the instruction exec
 ### Instruction Set
 The instruction encoding follows the ARM LRM specification:
 - **Data Processing Instructions**: Encoded with register and immediate value support.
+  <img src="Images/Instruction_Dataprocessing.png" alt="Data Processing Instructions" width="600">
+
 - **Memory Instructions**: Support for pre-indexed and post-indexed addressing modes.
+  <img src="Images/Instruction_Memory.png" alt="Memory Instructions" width="600">
+
 - **Branch Instructions**: Conditional and unconditional branching.
+  <img src="Images/Instruction_Branch.png" alt="Branch Instructions" width="600">
+
 
 ### Status Registers
 The CPU updates the N (negative), Z (zero), C (carry), and V (overflow) flags in the Current Program Status Register (CPSR) based on the instruction outcome, enabling conditional execution.
