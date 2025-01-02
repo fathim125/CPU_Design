@@ -79,7 +79,8 @@ The instruction encoding follows the ARM LRM specification:
 ---
 
 ### Control
-The control logic for the CPU has been detailed to show how signals are routed to different components. Below is an image of the controller logic
+The control logic for the CPU has been detailed to show how signals are routed to different components.
+Below is an image of the controller logic
   <img src="Images/Controller_1.png" alt="Controller Overview" width="500">
 
 
