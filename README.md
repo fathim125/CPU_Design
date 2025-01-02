@@ -110,6 +110,18 @@ To verify the functionality of the CPU, follow these steps:
 ---
 ## Testing
 
+To verify the functionality of the CPU, I referenced the test code provided in Digital Design and Computer Architecture ARM Edition by Harris that is shown in the table below. The correctness of the design has been proven through simulation. By the end of execution, the value 7 must be stored at memory address 84 (index 21 in the memory array). This would validate the functionality of:
+
+#### Data Processing Instructions: 
+Ensures correct ALU operations like addition, subtraction, AND, and ORR.
+
+#### Memory Operations: 
+Validates the correct implementation of LDR and STR instructions, ensuring proper interaction with the memory subsystem.
+
+#### Branching: 
+Confirms that conditional branch instructions work as expected, with the program counter updating correctly based on branch conditions.
+
+
 | ADDR | PROGRAM             | COMMENTS                      | BINARY MACHINE CODE          | HEX CODE   |
 |------|---------------------|-------------------------------|------------------------------|------------|
 | 00   | SUB R0, R15, R15    | R0 = 0                        | 1110 0000 0010 1111 0000 0000 0000 1111 | E04F000F |
@@ -135,6 +147,11 @@ To verify the functionality of the CPU, follow these steps:
 | 50   | ADD R2, R0, #13     | shouldn’t happen              | 1110 0010 1000 0000 0010 0000 0000 1101 | E280200D |
 | 54   | ADD R2, R0, #10     | shouldn’t happen              | 1110 0010 1000 0000 0010 0000 0000 1010 | E280200A |
 | 58   | STR R2, [R0, #84]   | mem[84] = 7                   | 1110 0101 1000 0000 0010 0101 0100 0000 | E5802054 |
+
+
+
+The final output of mem[84] = 7 demonstrates that the CPU design executes the test program successfully and adheres to the expected behavior.
+
 
 ---
 
