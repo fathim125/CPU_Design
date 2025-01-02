@@ -36,9 +36,12 @@ The CPU handles all conditional mnemonics specified in the ARM LRM, including bu
 
 ## Architecture
 
+  <img src="Images/Overview.png" alt="Overview" width="600">
+
+
 ### Datapath
 
-<img src="Images/Datapath.png" alt="Datapath Diagram" width="500">
+<img src="Images/Datapath.png" alt="Datapath Diagram" width="800">
 
 The CPU consists of a carefully designed datapath to handle the instruction execution process. Key components include:
 - **Instruction Memory**: Stores instructions for execution.
@@ -57,23 +60,11 @@ The instruction encoding follows the ARM LRM specification:
 
 - **Branch Instructions**: Conditional and unconditional branching.
   <img src="Images/Instruction_Branch.png" alt="Branch Instructions" width="600">
+  <img src="Images/Instruction_Branch_2.png" alt="Branch Instructions" width="600">
 
 
 ### Status Registers
 The CPU updates the N (negative), Z (zero), C (carry), and V (overflow) flags in the Current Program Status Register (CPSR) based on the instruction outcome, enabling conditional execution.
-
----
-
-## File Structure
-- `datapath.v`: Verilog code for the datapath design.
-- `controller.v`: Verilog code for the control unit.
-- `alu.v`: Verilog code for the Arithmetic Logic Unit.
-- `regfile.v`: Verilog code for the register file.
-- `imem.v`: Instruction memory implementation.
-- `dmem.v`: Data memory implementation.
-- `extender.v`: Sign and zero extender module.
-- `top.v`: Top-level Verilog module for integration.
-- `design.sv`: Testbench for simulating the CPU functionality.
 
 ---
 
@@ -84,7 +75,6 @@ The CPU functionality has been verified using ModelSim. Test cases for different
 - Branching instructions (e.g., B).
 - Conditional mnemonics (e.g., EQ, NE, GT).
 
----
 
 ---
 
