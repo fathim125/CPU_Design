@@ -152,7 +152,7 @@ Confirms that conditional branch instructions work as expected, with the program
 
 Below, the final output of mem[84] = 7 demonstrates that the CPU design executes the test program successfully and adheres to the expected behavior.
 
-  <img src="Images/Result.png" alt="Result" width="180">
+  <img src="Images/Result.png" alt="Result" width="500">
 
 
 ---
