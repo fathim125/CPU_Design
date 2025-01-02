@@ -40,7 +40,7 @@ The CPU handles all conditional mnemonics specified in the ARM LRM, including bu
 <img src="Images/Datapath.png" alt="Datapath Diagram" width="800">
 
 #### Branch Instruction
-  <img src="Images/Datapath_Branch.pngg" alt="Datapath for Branch Instruction" width="600">
+  <img src="Images/Datapath_Branch.png" alt="Datapath for Branch Instruction" width="600">
 
 #### Data Processing with Immediate Values
   <img src="Images/Datapath_Dataprocessing_Imm.png" alt="Datapath for Data Processing(Immediate)" width="600">
